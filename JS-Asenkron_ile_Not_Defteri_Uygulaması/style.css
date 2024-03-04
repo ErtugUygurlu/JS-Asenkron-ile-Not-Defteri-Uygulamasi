@@ -1,0 +1,98 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(notdefteri.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+#noteList {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: auto; 
+  gap: 10px;
+  overflow: auto;
+  max-height: 70vh; 
+}
+
+.note {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.note:hover {
+  transform: scale(1.05);
+  background-color: #ffa07a;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+}
+
+button.edit {
+  background-color: #ffc107;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 5px;
+}
+
+button.edit:hover {
+  background-color: #ff9800;
+}
+
+button.delete {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.delete:hover {
+  background-color: #f20505;
+}
+
+#addNoteButton {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+#addNoteButton:hover {
+  background-color: #218838;
+}
+
+#noteList{
+  position:relative;
+  left:45px;
+ }
